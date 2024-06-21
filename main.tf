@@ -25,6 +25,7 @@ module "vpc" {
   public_subnets  = slice(var.public_subnet_cidr_blocks, 0, 2)
 
   enable_nat_gateway = true
+  single_nat_gateway = true
   enable_vpn_gateway = false
 }
 
